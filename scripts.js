@@ -66,7 +66,7 @@ if (featuredEntry) {
 
 		// add entry to the entries container
 		entriesContainer.innerHTML += `
-			<a href="/baseballromance/?entry=${ i }">
+			<a href="baseballromance.club/?entry=${ i }">
 				<div class="entry">
 					<img class=gif src="images/${ entry.team.toLowerCase() }.gif" />                
 					<p class="entry-nickname">ID: ${ entry.nickname }</h2>
