@@ -1,0 +1,226 @@
+html {
+	background: rgb(0, 0, 0);
+	margin: 100px;
+	margin-top:30px;
+	font-family: "yoon-px-windowgothic";
+}
+
+
+h1{
+	font-size: 80px;
+	color:white;
+}
+
+h2{
+	font-size: 20px;
+	color:rgb(187, 255, 239);
+}
+
+p {
+	margin: 0;
+	line-height:30px;
+	font-size: 15px;
+	color:rgb(187, 255, 239);
+}
+
+label {
+	display: block;
+}
+
+input, textarea {
+	width: 100%;
+	resize: none;
+}
+
+.header {
+	font-size: 3rem;
+	font-weight: bold;
+	text-align: center;
+	margin: 2rem 0;
+}
+
+.entry {
+	display:block;
+	list-style-type: none;
+	padding: 30px;
+	margin:auto;
+	width: 225px;
+	border: 2px solid rgb(187, 255, 239);
+	border-radius: 20px;
+	color: rgb(255, 255, 255);
+	text-align:center;
+	transition: all 0.2s ease;
+}
+
+.entry:hover{
+	scale:103%;
+}
+
+.entry-nickname{
+	font-size: 20px;
+	line-height:40px;
+	padding:10px;
+}
+
+.entry-team{
+	font-size: 20px;
+	margin-bottom:-10px;
+}
+
+.featured-entry{
+	display:block;
+	justify-content: center;
+	text-align:center;
+	max-width: 500px;
+	padding: 60px;
+	margin-top: -50px;
+	border: 2px solid rgb(187, 255, 239);
+	border-radius: 20px;
+}
+
+
+
+div {
+	display: grid;
+	grid-template-columns: 270px 270px 270px 270px;
+	gap: 4rem;
+	justify-content: center;
+	margin:auto;
+	padding: 50px;
+}
+
+summary{
+	list-style: none;
+}
+
+
+
+.button {
+	padding: 15px 20px;
+	border-radius: 10px;
+	background-color:white;
+	text-align: center;
+	text-decoration: none;
+	max-width: 200px;
+	color:rgb(0, 0, 0);
+	transition: all 0.2s linear;
+	margin:8px;
+	display:inline-block;
+}
+
+.button:hover{
+	scale: 108%;
+}
+
+.gif{
+	max-width:200px;
+}
+
+.logo{
+	scale:70%;
+}
+
+img{
+	width:100%;
+}
+
+.text {
+	overflow: hidden;
+	border-right: .15em solid rgb(255, 255, 255);
+	white-space: nowrap;
+	margin: 0 auto;
+	width: fit-content; /* This helps make the cursor behave properly */
+	animation: 
+	  typing 3.5s steps(40, end) forwards,
+	  blink-caret .75s step-end infinite;
+}
+
+
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: rgb(255, 255, 255); }
+  }
+
+  @keyframes typing {
+	from { width: 0ch; }
+	to { width: 40ch; }}
+
+
+
+	a {
+		text-decoration: none;
+	  }
+
+
+	  .nav{
+		text-align: center;
+	}
+
+	@media (max-width: 1400px) {
+		div {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap:1rem;
+			margin:50px;
+		}
+
+
+	@media (max-width: 768px) {
+		html {
+			margin: 20px;
+		}
+	
+		h1 {
+			font-size: 40px;
+		}
+	
+		h2 {
+			font-size: 16px;
+		}
+	
+		p {
+			font-size: 12px;
+			line-height: 24px;
+		}
+	
+		.header {
+			font-size: 2rem;
+		}
+
+		.entry {
+			max-width: 100%;
+			padding: 35px 25px;
+		}
+	
+		.featured-entry {
+			max-width: 100%;
+			padding: 30px;
+		}
+
+		img{
+			width:100%;
+		}
+	
+	
+		.gif {
+			max-width: 50%;
+		}
+	
+		.button {
+			width: 80%;
+			padding: 15px;
+			font-size: 14px;
+		}
+	
+		.text {
+			font-size: 12px;
+			width: 100%;
+		}
+	
+		div {
+			grid-template-columns: 1fr; /* Stack entries vertically */
+			gap: 2rem;
+			padding:5px;
+		}
+	}
+	
